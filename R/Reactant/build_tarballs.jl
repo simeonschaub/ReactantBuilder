@@ -59,7 +59,7 @@ if [[ "${bb_full_target}" == *gpu+rocm* ]]; then
     # bundled for these. A device whose architecture is not listed fails at the
     # first kernel launch with `hipErrorInvalidDeviceFunction`.
     # anything before 942 hits a 128-bit error
-    ROCM_AMDGPU_TARGETS="gfx942,gfx1030,gfx1100,gfx1200,gfx1201"
+    ROCM_AMDGPU_TARGETS="gfx942,gfx1030,gfx1100,gfx1150,gfx1151,gfx1200,gfx1201"
 
     # ROCm does not seem to get on well with ccache
     # https://github.com/ROCm/TheRock/blob/main/docs/development/windows_support.md#lld-link-error-duplicate-symbol
